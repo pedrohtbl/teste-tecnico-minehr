@@ -1,10 +1,12 @@
+import Dashboard from "./pages/Dashboard";
 import GlobalStyle from "./style"
 
 const App = () => {
   return (
-    <div className="App">
+    <>
       <GlobalStyle/>
-    </div>
+      <Dashboard/>
+    </>
   );
 }
 

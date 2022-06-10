@@ -1,19 +1,30 @@
 import Button from "../Button"
-import { CustomDiv } from "./style"
+import { CustomDiv, FilterContainer } from "./style"
 import { FaFilter } from "react-icons/fa"
+import { useState } from "react";
+import { Collapse } from "@mui/material";
+import FilterBox from "../FilterBox";
 
 const Filter = () =>{
+    const [open,setOpen] = useState(false)
+
     return(
+        <>
         <CustomDiv>
             <div>
                 <h1>Dashboard</h1>
                 <p>Desafio Técnico Frontend</p>
             </div>
-            <Button> 
-                <FaFilter/>
-                Filtrar
-            </Button>
+
+            <FilterContainer>
+                <Button onClick={()=> setOpen(!open)}> 
+                    <FaFilter/>
+                    Filtrar
+                </Button>
+                <Collapse in={open}>{<FilterBox/>}</Collapse>
+            </FilterContainer>
         </CustomDiv>
+        </>
     )
 }
 

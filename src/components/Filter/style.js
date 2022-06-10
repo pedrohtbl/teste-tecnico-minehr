@@ -4,8 +4,7 @@ export const CustomDiv = styled.div`
     display: flex;
     background-color: transparent;
     justify-content: space-between;
-    padding: 0 3%;
-    width: 100vw;
+    width: 90vw;
     height: 91px;
     align-items: center ;
 
@@ -37,5 +36,15 @@ export const CustomDiv = styled.div`
             height: 59px;
         }
     }
+`
+export const FilterContainer = styled.section`
+    min-height: 150px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 
+    button{
+        position: absolute;
+    }
 `

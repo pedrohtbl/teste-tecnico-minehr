@@ -1,6 +1,5 @@
 import { CustomLi } from "./style"
 import { IoInformationCircle } from "react-icons/io5"
-import { GiHamburgerMenu } from "react-icons/gi"
 import ReactApexChart from "react-apexcharts"
 
 const Graphic = ({type,content}) =>{
